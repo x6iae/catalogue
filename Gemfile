@@ -8,8 +8,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'devise'
+gem 'figaro'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
@@ -18,7 +20,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '~> 3.5'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'faker'
